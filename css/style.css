@@ -103,8 +103,11 @@ h2 {
   font-style: normal;
   font-size: 2.5rem;
   line-height: 2.6rem;
-
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 h3 {
@@ -122,8 +125,14 @@ p {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5rem;
-  padding-left: 20px;
   width: 90%;
+}
+
+.pcard {
+  padding-left: 20px;
+}
+.bold {
+  font-weight: 600;
 }
 
 .intro {
@@ -136,33 +145,22 @@ p {
 main {
   margin: 0 auto;
   margin-bottom: 60px;
+  max-width: 1200px;
 }
 
 #wie {
-  background-color: purple;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 10%;
 }
 
 #hoe {
-  background-color: #9373b1;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#wat {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 10%;
 }
 
 #contact {
-  background-color: #0092d7;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 10%;
 }
 
 .container {
-  max-width: 1300px;
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -174,9 +172,11 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: auto;
   background-color: white;
+}
+
+.shadow {
   -webkit-box-shadow: 5px 10px 13px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 10px 13px 3px rgba(0, 0, 0, 0.2);
 }
