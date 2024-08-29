@@ -1,83 +1,136 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Afhankelijkheid van China</title>
+    <title>CMD merch</title>
+    <link rel="stylesheet" href="https://use.typekit.net/btc2gwr.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="menu">
+
+  <header>
+    <div class="containernav">
+      <nav class="menu">
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="https://cmdmaastricht.nl/" target="_blank"
-                ><img class="logo" src="assets/img/zuyd.svg" alt="logo zuyd" />
-              </a>
-              <a href="https://www.cbs.nl/" target="_blank"
-                ><img class="logocbs" src="assets/img/cbs.svg" alt="logo cbs" />
+              <a href="index.html"
+                ><img class="logo" src="assets/hartje.svg" alt="hartje" />
               </a>
             </li>
             <li class="nav-item">
-              <a href="index.html">Overzicht</a>
+              <a href="index.html#wie">Over ons</a>
             </li>
             <li class="nav-item">
-              <a href="egd.html">European Green Deal</a>
+              <a href="index.html#hoe">Hoe werkt het?</a>
             </li>
             <li class="nav-item">
-              <a href="voeding.html">Duurzame voeding</a>
+              <a href="index.html#wat">Producten</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact">Contact</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
+  <body>
     <main>
-      <div class="heroChina">
-        <h1 class="heroTittle">Afhankelijkheid van China</h1>
-      </div>
+      <div class="containerproduct">
+        <div class="card">
+          <div class="containerproduct">
+            <div class="mySlides">
+              <img src="assets/hoodielicht.jpg" style="width: 100%" />
+            </div>
 
-      <div class="container">
-        <iframe
-          src="https://www.youtube.com/embed/qSq7-Mm1gSc?si=wpFiECFhlBUf_vmM"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            <div class="mySlides">
+              <img src="assets/shirts.jpg" style="width: 100%" />
+            </div>
 
-        <iframe
-          src="https://www.youtube.com/embed/5suxEU9yk9Y?si=83YWCnhTvktgJPpK"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            <div class="mySlides">
+              <img src="assets/sweaterlicht.jpg" style="width: 100%" />
+            </div>
 
-        <iframe
-          src="https://www.youtube.com/embed/8NCUG70P03o?si=xuLpWcMDZmVzdEAY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            <div class="mySlides">
+              <img src="assets/hoodielicht.jpg" style="width: 100%" />
+            </div>
 
-        <iframe
-          src="https://www.youtube.com/embed/R39ZabFF7Lc?si=bgTjxfKwC1V3QCzC"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            <div class="mySlides">
+              <img src="assets/shirts.jpg" style="width: 100%" />
+            </div>
 
-        <iframe
-          src="https://www.youtube.com/embed/5pGC5_-G7WE?si=la2LRJwsIUE13u-K"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/hoodielicht.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(1)"
+                  alt="The Woods"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/shirts.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(2)"
+                  alt="Cinque Terre"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweaterlicht.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(3)"
+                  alt="Mountains and fjords"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/hoodielicht.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(4)"
+                  alt="Northern Lights"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/shirts.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(5)"
+                  alt="Nature and sunrise"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="left">Hoodies</h2>
+          <p>
+            - over het product <br />
+            - duurzaamheid <br />
+            - model tekst
+          </p>
+          <p class="bold">&euro; 37,49</p>
+          <a
+            href="https://forms.gle/Goy14Jnkzi1WZd418"
+            target="_blank"
+            class="button"
+            >bestellen</a
+          >
+          <h4>Maattabel</h4>
+          <img src="assets/maattabelhoodie.svg" />
+          <h4>Onderhoud</h4>
+        </div>
       </div>
     </main>
   </body>
+  <script src="js/script.js"></script>
 </html>
