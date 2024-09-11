@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* header begin */
@@ -482,4 +484,9 @@ main {
 .duurzaamheid {
   width: 70%;
   padding: 5% 0%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
