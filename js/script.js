@@ -1,4 +1,5 @@
 // menu
+
 window.addEventListener("scroll", function () {
   console.log("Scrolling");
   const menu = document.querySelector(".menu");
@@ -40,5 +41,21 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Collapsible functionality
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      console.log("Collapsible clicked:", this.textContent.trim());
+      this.classList.toggle("activec");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+});

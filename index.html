@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>CMD merch</title>
+    <link rel="icon" href="/assets/hartje.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="https://use.typekit.net/btc2gwr.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -17,8 +18,9 @@
                   ><img class="logo" src="assets/hartje.svg" alt="hartje" />
                 </a>
               </li>
+
               <li class="nav-item">
-                <a href="#wie">Over ons</a>
+                <a href="#design">Het design</a>
               </li>
               <li class="nav-item">
                 <a href="#hoe">Hoe werkt het?</a>
@@ -33,9 +35,9 @@
           </nav>
         </nav>
         <div class="hero">
+          <div class="overlay"></div>
           <div class="textbox">
-            <h1>Het is eindelijk zover de CMD-merch is er</h1>
-            <p>Moet hier iets anders?</p>
+            <h1>Het is eindelijk zover: de CMD-merch is er!</h1>
           </div>
 
           <img class="line" src="assets/line.svg" alt="line" />
@@ -47,29 +49,57 @@
       <div id="wie">
         <div class="container">
           <div class="card">
-            <img class="columnimage" src="assets/iris2.jpg" alt="iris" />
+            <img class="columnimage" src="assets/iris.jpg" alt="iris" />
           </div>
           <div class="card">
             <h2 class="left">Wie zijn wij?</h2>
             <p>
               Wij zijn Iris & Iris we zitten inmiddels in ons laatste jaar van
-              CMD. Je kan ons vaak vinden in de rode ruimte waar we elke week
-              aan productief uitstellen doen. Hierdoor ontstaan projecten zoals
-              deze. In de wandelgangen hoorde we dat er behoefte was aan CMD
-              merch. Dus hier zijn we dan!
+              CMD. Je kon ons vaak vinden in de rode ruimte waar we elke week
+              aan productief uitstellen deden. We zijn inmiddels verplaatst naar
+              gymzaal waar we nog steeds productief uitstellen. Hierdoor
+              ontstaan projecten zoals deze. In de wandelgangen hoorde we vaak
+              "hé, waarom hebben wij nog geen merch?" Dus hier zijn we mee aan
+              de slag gegaan!
             </p>
             <p>
               We zijn begonnen in december en na vele iteraties itte watte? En
-              met de feedback van onze medestudenten zijn we tot dit
-              eindresultaat gekomen. We hopen dat jullie net zo enthousiast zijn
-              als wij! dus wil je ook je liefde voor CMD laten zien? Bestel dan
-              nu je eigen CMD merch!
+              met de feedback van mede CMD'ers zijn we tot dit eindresultaat
+              gekomen. We hopen dat jullie net zo enthousiast zijn als wij! Wil
+              je ook je liefde voor CMD laten zien? Bestel dan nu je eigen
+              merch!
             </p>
             <img
-              class="handtekening"
+              id="handtekening"
               src="assets/handtekening.svg"
               alt="handtekening"
             />
+          </div>
+        </div>
+      </div>
+
+      <div id="design">
+        <div class="container">
+          <div class="card">
+            <img src="assets/design.png" alt="design" />
+          </div>
+          <div class="card">
+            <h2 class="left">Het design</h2>
+            <p>
+              Iedereen kent wel een docent of medestudent die altijd dezelfde
+              opmerking maakt. Denk hierbij aan de welbekende quote van Sylvia
+              "even centraal". Al deze verschillende quotes hebben we verzameld
+              met behulp van jullie input. Zonder jullie was het niet gelukt om
+              deze bonte verzameling van quotes, herinneringen en iconische
+              momenten te maken samen als community.
+            </p>
+            <p>
+              CMD is meer dan een opleiding. Het voelt voor ons als een tweede
+              thuis door de bijzondere dynamiek tussen alle verschillende mensen
+              die CMD maken. Dit gevoel hebben we proberen vast te leggen in dit
+              design. Dit zijn de momenten die we ons zullen herinneren van de
+              BBQ, de karaoke tot die eeuwige zin "even centraal".
+            </p>
           </div>
         </div>
       </div>
@@ -80,14 +110,31 @@
         <div id="stap1">
           <div class="container">
             <div class="card">
-              <img src="assets/potlood.svg" alt="potlood" />
+              <h3 class="left">Stap 1 bestellen</h3>
+              <p>
+                Voordat je bestelt, willen we dat je zeker weet dat je de juiste
+                keuze maakt. Daarom organiseren we pasmomenten op verschillende
+                dagen. Kom langs in de gymzaal om de verschillende producten te
+                bekijken en te passen. De pasmomenten zijn op:
+              </p>
+
+              <ul style="list-style-type: square">
+                <li>woensdag 25 september van 11:00 tot 14:00</li>
+                <li>vrijdag 27 september van 11:00 tot 14:00</li>
+                <li>dinsdag 1 oktober van 11:00 tot 14:00</li>
+                <li>woensdag 2 oktober van 11:00 tot 14:00</li>
+                <li>vrijdag 4 oktober van 11:00 tot 14:00</li>
+              </ul>
+
+              <p>
+                Tijdens deze momenten kun je de kleding bekijken, voelen en
+                passen. Ben je tevreden? Vul dan eventueel al ter plaatse het
+                bestelformulier in, zodat we je bestelling in gang kunnen
+                zetten. (Je kunt je keuze ook baseren op de maattabel).
+              </p>
             </div>
             <div class="card">
-              <h2 class="left">Stap 1 bestellen</h2>
-              <p>
-                - pasmomenten <br />
-                - formulier invullen
-              </p>
+              <img src="assets/bestellen.jpeg" />
             </div>
           </div>
         </div>
@@ -95,17 +142,26 @@
         <div id="stap2">
           <div class="container">
             <div class="card">
-              <img src="assets/mail.svg" alt="mail" />
+              <img src="assets/bevestiging.jpeg" />
             </div>
             <div class="card">
-              <h2 class="left">Stap 2 bevestiging</h2>
+              <h3>Stap 2 bevestiging</h3>
               <p>
-                - je ontvangt een mail met de bevestiging van je bestelling
-                <br />
-                - let op dit kan even duren omdat we alles zelf moeten verwerken
-                heb je 24 uur nog niks gehoord? stuur ons dan een mailtje <br />
-                - betaallink - nog een keer bevestiging
+                Na het plaatsen van je bestelling ontvang je een
+                bevestigingsmail van ons.
+                <span class="bold">Let op:</span> omdat we alles zelf verwerken,
+                kan het even duren voordat je deze mail ontvangt. In deze mail
+                vind je ook een betaallink. Zodra de betaling is voltooid,
+                ontvang je nog een keer een bevestiging van je bestelling en ook
+                van je betaling. Zo weet je zeker dat alles in orde is!
               </p>
+              <p>
+                Heb je na 24 uur nog niks gehoord? Stuur ons dan even een
+                <a class="maillink" href="mailto:cmdmerch@outlook.com"
+                  >mailtje</a
+                >, dan kijken we het voor je na.
+              </p>
+              <p class="bold">Je kan bestellen tot 21 oktober!</p>
             </div>
           </div>
         </div>
@@ -113,16 +169,22 @@
         <div id="stap3">
           <div class="container">
             <div class="card">
-              <img src="assets/smiley.svg" alt="smiley" />
+              <h3 class="left">Stap 3 Ophalen</h3>
+              <p>
+                Omdat we in één keer bestellen om verspilling te voorkomen,
+                duurt het even voordat jouw CMD-merch klaar is. Maar geen
+                zorgen, we houden je op de hoogte van de voortgang.
+              </p>
+              <p>
+                Zodra jouw bestelling is geproduceerd, ontvang je van ons een
+                bericht. En dan organiseren we een aantal momenten waarop je je
+                merch kunt ophalen op school. We hebben bewust gekozen voor een
+                duurzame en vegan kleding, maar met het oog op kwaliteit en onze
+                planeet is het dat helemaal waard!
+              </p>
             </div>
             <div class="card">
-              <h2 class="left">Stap 3 Ophalen</h2>
-              <p>
-                - Bestellen in 1 keer dus het duurt even - houden je op de
-                hoogte <br />
-                - als het klaar is bericht en dan ophalen op school wij
-                organiseren momenten.
-              </p>
+              <img src="assets/ophalen.jpeg" />
             </div>
           </div>
         </div>
@@ -132,48 +194,62 @@
         <h2>Genoeg gelezen, ik wil bestellen!</h2>
         <div class="container">
           <div class="card shadow">
-            <img class="columnimage" src="assets/shirts.jpg" alt="shirts" />
-            <h3>T-shirts</h3>
-            <p class="pcard">Promo tekst shirts</p>
-            <p class="pcard bold">&euro;22,49</p>
+            <img src="assets/card_shirt.jpg" alt="shirts" />
+            <h4 class="ph4">T-shirt</h4>
+            <p class="pcard">
+              Dit CMD-shirt is een must-have of je nu aan een project werkt of
+              gewoon relaxed
+            </p>
+            <p class="pcard bold">&euro;22,50</p>
 
-            <a href="tshirts.html" class="button">Meer informatie</a>
+            <a href="tshirts.html" class="pbutton">Meer informatie</a>
           </div>
 
           <div class="card shadow">
-            <img
-              class="columnimage"
-              src="assets/sweaterlicht.jpg"
-              alt="sweater"
-            />
-            <h3>Sweaters</h3>
+            <img src="assets/card_sweater.jpg" alt="sweater" />
+            <h4 class="ph4">Sweater</h4>
 
-            <p class="pcard">promo tekst sweaters</p>
-            <p class="pcard bold">&euro;32,49</p>
+            <p class="pcard">
+              Deze CMD-sweater is het perfecte kledingstuk voor die frisse dagen
+            </p>
+            <p class="pcard bold">&euro;32,50</p>
 
-            <a href="sweater.html" class="button">Meer informatie</a>
+            <a href="sweater.html" class="pbutton">Meer informatie</a>
           </div>
 
           <div class="card shadow">
-            <img
-              class="columnimage"
-              src="assets/hoodielicht.jpg"
-              alt="hoodies"
-            />
-            <h3>Hoodies</h3>
+            <img src="assets/card_hoodie.jpg" alt="hoodies" />
+            <h4 class="ph4">Hoodie</h4>
 
-            <p class="pcard">promo tekst hoodies</p>
-            <p class="pcard bold">&euro;37,49</p>
+            <p class="pcard">
+              Deze CMD-hoodie is perfect voor in de ijskoude gymzaal
+            </p>
+            <p class="pcard bold">&euro;37,50</p>
 
-            <a href="hoodie.html" class="button">Meer informatie</a>
+            <a href="hoodie.html" class="pbutton">Meer informatie</a>
           </div>
         </div>
       </div>
       <div id="contact">
-        <h2>Heb je nog vragen?</h2>
-        <h3>
-          - Stuur ons dan een berichtje of spreek ons aan in de wandelgangen
-        </h3>
+        <div class="containerc">
+          <div class="imgc">
+            <img src="assets/mail.svg" alt="mail" />
+          </div>
+          <div class="text">
+            <h2 class="left">Heb je nog vragen?</h2>
+            <p>
+              Heb je een vraag over de producten, het bestelproces of iets
+              anders? Stuur dan een mailtje naar
+              <a class="maillink" href="mailto:cmdmerch@outlook.com"
+                >cmdmerch@outlook.com</a
+              >.
+            </p>
+            <p>
+              Je kunt ons natuurlijk ook altijd even aanspreken als je ons
+              tegenkomt.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   </body>

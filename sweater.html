@@ -1,265 +1,203 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Duurzame voeding</title>
+    <title>CMD merch</title>
+    <link rel="icon" href="/assets/hartje.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://use.typekit.net/btc2gwr.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header>
-      <div class="menu">
+
+  <header>
+    <div class="containernav">
+      <nav class="menu">
         <nav>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="https://cmdmaastricht.nl/" target="_blank"
-                ><img class="logo" src="assets/img/zuyd.svg" alt="logo zuyd" />
-              </a>
-              <a href="https://www.cbs.nl/" target="_blank"
-                ><img class="logocbs" src="assets/img/cbs.svg" alt="logo cbs" />
+              <a href="index.html"
+                ><img class="logo" src="assets/hartje.svg" alt="hartje" />
               </a>
             </li>
             <li class="nav-item">
-              <a href="index.html">Overzicht</a>
+              <a href="index.html#design">Het design</a>
             </li>
             <li class="nav-item">
-              <a href="egd.html">European Green Deal</a>
+              <a href="index.html#hoe">Hoe werkt het?</a>
             </li>
             <li class="nav-item">
-              <a href="voeding.html">Duurzame voeding</a>
+              <a href="index.html#wat">Producten</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact">Contact</a>
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
+  <body>
     <main>
-      <div class="heroVoeding">
-        <h1 class="heroTittle">Duurzame voeding</h1>
+      <div class="containerproduct">
+        <div class="card">
+          <div class="containerproduct">
+            <div class="mySlides">
+              <img src="assets/sweater_wit_voor.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/sweater_wit_achter.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/sweater_zwart_voor.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/sweater_zwart_achter.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/sweater_sfeer.jpg" style="width: 100%" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweater_wit_voor.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(1)"
+                  alt="sweater wit voor"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweater_wit_achter.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(2)"
+                  alt="sweater wit achter"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweater_zwart_voor.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(3)"
+                  alt="sweater zwart voor"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweater_zwart_achter.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(4)"
+                  alt="sweater zwart achter"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="assets/sweater_sfeer.jpg"
+                  style="width: 100%"
+                  onclick="currentSlide(5)"
+                  alt="sweater sfeer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardproduct">
+          <h2 class="left">Sweater</h2>
+          <p class="bold prijs">&euro; 32,50</p>
+          <p>
+            Deze CMD-sweater is het perfecte kledingstuk voor die frisse dagen.
+            Niet te warm, niet te koud, maar precies goed! Je kunt hem altijd
+            dragen – of je nu aan het brainstormen bent of gewoon een
+            koffiepauze neemt.
+          </p>
+          <ul>
+            <li>Superzacht</li>
+            <li>Biologisch katoen en gerecycled polyester</li>
+            <li>Unisex, medium fit</li>
+          </ul>
+          <p>Het model is 179 cm en draagt maat S</p>
+
+          <img class="duurzaamheid" src="assets/duurzaamheid.png" />
+
+          <a
+            href="https://forms.gle/Goy14Jnkzi1WZd418"
+            target="_blank"
+            class="button"
+            >bestellen</a
+          >
+
+          <button class="collapsible">Maattabel</button>
+          <div class="collapsible-content">
+            <p>
+              Ben je niet helemaal zeker van je kledingmaat? Bekijk dan
+              hieronder onze maattabel of kom langs bij een van de pasmomenten:
+            </p>
+            <ul style="list-style-type: square">
+              <li>woensdag 25 september van 11:00 tot 14:00</li>
+              <li>vrijdag 27 september van 11:00 tot 14:00</li>
+              <li>dinsdag 1 oktober van 11:00 tot 14:00</li>
+              <li>woensdag 2 oktober van 11:00 tot 14:00</li>
+              <li>vrijdag 4 oktober van 11:00 tot 14:00</li>
+            </ul>
+            <img src="assets/maattabelcrewnneck.svg" />
+          </div>
+
+          <button class="collapsible">Onderhoud</button>
+          <div class="collapsible-content">
+            <img class="onderhoud" src="assets/waslabelhoodie.svg" />
+            <lu
+              ><li>Wassen op 30 &deg</li>
+              <li>Mag niet in de droger</li>
+              <li>
+                Alleen binnestebuiten strijken, niet direct op de print
+              </li></lu
+            >
+          </div>
+        </div>
       </div>
 
-      <div class="container">
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team01.jpg"
-            alt="multimediastory"
-          />
-          <h3>Nederland beterland</h3>
+      <div id="leuk">
+        <h3 class="verveine">Misschien vind jij deze ook leuk</h3>
+        <div class="container">
+          <div class="card shadow">
+            <img
+              class="columnimage"
+              src="assets/card_hoodie.jpg"
+              alt="hoodie"
+            />
+            <h4 class="ph4">Hoodie</h4>
 
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team01/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team02.jpg"
-            alt="multimediastory"
-          />
-          <h3>Een kwestie van perspectief</h3>
+            <p class="pcard bold">&euro;37,50</p>
 
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team02/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team03.jpg"
-            alt="multimediastory"
-          />
-          <h3>Healthy food market</h3>
+            <a href="hoodie.html" class="pbutton">Meer informatie</a>
+          </div>
 
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team03/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
+          <div class="card shadow">
+            <img
+              class="columnimage"
+              src="assets/card_shirt.jpg"
+              alt="t-shirt"
+            />
+            <h4 class="ph4">T-shirt</h4>
 
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team05.jpg"
-            alt="multimediastory"
-          />
-          <h3>Duurzaam eetgedrag</h3>
+            <p class="pcard bold">&euro;22,50</p>
 
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team05/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team06.jpg"
-            alt="multimediastory"
-          />
-          <h3>Waar komt ons eten vandaan?</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team06/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team07.jpg"
-            alt="multimediastory"
-          />
-          <h3>De toekomst van familie Groen</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team07/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team08.jpg"
-            alt="multimediastory"
-          />
-          <h3>Van veld naar vlees</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team08/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team09.jpg"
-            alt="multimediastory"
-          />
-          <h3>Waarom hebben we zoveel vee in Nederland?</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team09/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team11.jpg"
-            alt="multimediastory"
-          />
-          <h3>Het verhaal van Terra</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team11/"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team12.jpg"
-            alt="multimediastory"
-          />
-          <h3>Doomsday scenario</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team12"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team13.jpg"
-            alt="multimediastory"
-          />
-          <h3>Agra</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team13"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team14.jpg"
-            alt="strawberry"
-          />
-          <h3>Palmolie en Nederland</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team14"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team15.jpg"
-            alt="strawberry"
-          />
-          <h3>Wat je bestee(d)t</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team15"
-            target="_blank"
-            >Bekijk de story</a
-          >
-        </div>
-
-        <div class="card">
-          <img
-            class="columnimage"
-            src="assets/voeding/team16.jpg"
-            alt="strawberry"
-          />
-          <h3>Landbouwend Nederland</h3>
-
-          <a
-            class="button"
-            href="https://mia-mms-2223.github.io/team16"
-            target="_blank"
-            >Bekijk de story</a
-          >
+            <a href="tshirts.html" class="pbutton">Meer informatie</a>
+          </div>
         </div>
       </div>
     </main>
   </body>
+  <script src="js/script.js"></script>
 </html>

@@ -16,7 +16,7 @@ body {
   -moz-transition: all ease-out 0.2s;
   -o-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .active {
@@ -32,6 +32,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  z-index: 0;
 }
 
 .line {
@@ -97,13 +107,15 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 3rem;
+
+  position: relative;
 }
 
 h2 {
   color: black;
   font-family: verveine, sans-serif;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 2.6rem;
   text-align: center;
 }
@@ -115,13 +127,24 @@ h2 {
 h3 {
   font-family: montserrat, sans-serif;
   font-weight: 600;
-  font-size: 1.17rem;
+  font-size: 1.3rem;
   color: black;
-  padding-left: 20px;
   width: 85%;
 }
 
 h4 {
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.17rem;
+  color: black;
+  width: 85%;
+}
+.ph4 {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+h5 {
   font-family: montserrat, sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -133,6 +156,18 @@ p {
   font-style: normal;
   line-height: 1.5rem;
   width: 90%;
+}
+
+.maillink {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: #0092d7;
+}
+
+.prijs {
+  font-size: 1.3rem;
 }
 
 .pcard {
@@ -147,6 +182,23 @@ p {
   padding: 0;
 }
 
+.verveine {
+  font-family: verveine, sans-serif;
+  font-size: 2rem;
+}
+
+li {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  list-style-type: circle;
+}
+
+ul {
+  padding-left: 3%;
+}
+
 /* text eind */
 
 main {
@@ -155,27 +207,85 @@ main {
 }
 
 #wie {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
-.handtekening {
+#handtekening {
   width: 20%;
   margin-top: 5%;
+}
+
+#design {
+  margin-top: 8%;
+  padding-top: 85px;
+}
+#design img {
+  width: 80%;
+  padding-left: 10%;
+}
+
+#design .container {
+  align-items: center;
+  justify-content: center;
 }
 
 #hoe {
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 10%;
+  margin-top: 8%;
+  padding-top: 85px;
 }
 
-#hoe img {
-  width: 20%;
+#stap2 {
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+#wat {
+  margin-top: 8%;
+  padding-top: 85px;
 }
 
 #contact {
-  margin-top: 10%;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  padding-top: 85px;
+}
+
+#contact .container {
+  margin: 0 auto;
+}
+
+.imgc {
+  width: 15%;
+  margin-top: 2%;
+}
+
+.text {
+  padding-left: 50px;
+  width: 35%;
+}
+
+#leuk {
+  margin-top: 8%;
+}
+
+.containerc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#leuk .container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: minmax(50px, 1fr);
+  grid-auto-flow: dense;
+  margin: 0;
+  width: 50%;
+  padding-bottom: 10%;
 }
 
 .container {
@@ -185,12 +295,18 @@ main {
   grid-auto-rows: minmax(250px, 1fr);
   grid-auto-flow: dense;
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: fit-content;
+}
+
+#hoe .card {
+  margin-bottom: 10%;
 }
 
 .shadow {
@@ -198,18 +314,28 @@ main {
   box-shadow: 5px 10px 13px 3px rgba(0, 0, 0, 0.2);
 }
 
-iframe {
-  margin-top: 2rem;
-  height: 550px;
-}
-
-.columnimage {
-  width: 60%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
 .button {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: fit-content;
+  padding: 20px;
+  display: block;
+  color: white;
+  background-color: #0092d7;
+  margin: 5% 0 3% 0;
+}
+
+.button:hover {
+  background-color: white;
+  color: #0092d7;
+  border: solid 3px #0092d7;
+}
+
+.pbutton {
+  margin: 0 0 20px 20px;
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -218,14 +344,8 @@ iframe {
   width: fit-content;
   padding: 15px;
   display: block;
-  margin: 0 0 20px 20px;
   color: black;
   border: 3px solid #0092d7;
-}
-
-.button:hover {
-  background-color: #0092d7;
-  color: white;
 }
 
 /*carousel*/
@@ -236,9 +356,13 @@ iframe {
   display: grid;
   gap: 1rem 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(250px, 1fr);
   grid-auto-flow: dense;
   margin: 0 auto;
+  padding-top: 8%;
+}
+
+.cardproduct {
+  padding-top: 5%;
 }
 
 /* Hide the images by default */
@@ -256,7 +380,7 @@ iframe {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -309,4 +433,53 @@ iframe {
 .active,
 .demo:hover {
   opacity: 1;
+}
+/* collapsible */
+.collapsible {
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: #f1f1f1;
+  position: relative; /* Add relative positioning */
+  margin-top: 5%;
+}
+
+.collapsible::after {
+  content: "+";
+  font-size: 1.2rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.activec::after {
+  content: "-";
+}
+
+.activec,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.onderhoud {
+  width: 40%;
+  padding: 5% 0%;
+}
+
+.duurzaamheid {
+  width: 70%;
+  padding: 5% 0%;
 }
